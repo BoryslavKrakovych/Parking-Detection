@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Live Feed</title>
+</head>
+<body>
+    <img id="live" src="/latest" width="100%">
+    <script>
+        setInterval(() => {
+            const img = document.getElementById("live");
+            img.src = "/latest?" + new Date().getTime();  // уникнення кешу
+        }, 1000);  // оновлення кожну секунду
+    </script>
+</body>
+</html>

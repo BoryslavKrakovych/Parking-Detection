@@ -5,7 +5,7 @@ from ultralytics import YOLO  # бібліотека Ultralytics з моделя
 
 
 class YOLOv8SegDetector:
-    def __init__(self, model_path="yolov8n-seg.pt", conf=0.25, device='cuda'):
+    def __init__(self, model_path="weights/yolov8n-seg.pt", conf=0.25, device='cuda'):
         """
         Ініціалізація YOLOv8 сегментаційної моделі.
 
